@@ -1,34 +1,40 @@
-build.gradle
+# gradle
 
-build
-bin
-eclipse
-gradle
-gradlew*
-run
+.gradle/
+build/
+out/
+classes/
 
-MinecraftForge-Credits.txt
+# eclipse
 
-MinecraftForge-License.txt
+*.launch
 
-Paulscode IBXM Library License.txt
+# idea
 
-LICENSE-fml.txt
+.idea/
+*.iml
+*.ipr
+*.iws
 
+# vscode
 
-README.txt
-
-Paulscode SoundSystem CodecIBXM License.txt
-
-forge-timekeeper_Server.launch
-
-forge-timekeeper_Client.launch
-
-forge-1.9-12.16.0.1811-1.9-changelog.txt
-
-CREDITS-fml.txt
-
-.gradle
+.settings/
+.vscode/
+bin/
 .classpath
 .project
-.settings
+
+# macos
+
+*.DS_Store
+
+# fabric
+
+run/
+
+# java
+
+hs_err_*.log
+replay_*.log
+*.hprof
+*.jfr

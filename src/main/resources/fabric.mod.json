@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "time-keeper",
+	"version": "${version}",
+	"name": "Time Keeper",
+	"description": "Keeps Time, awesomely.",
+	"authors": [
+		"ezfe"
+	],
+	"contact": {
+		"homepage": "https://ezekiel.dev",
+		"sources": "https://github.com/ezfe/time-keeper"
+	},
+	"license": "MIT",
+	"icon": "assets/time-keeper/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.ezekiel.timekeeper.TimeKeeper"
+		],
+		"client": [
+			"dev.ezekiel.timekeeper.TimeKeeperClient"
+		]
+	},
+	"mixins": [
+		"time-keeper.mixins.json",
+		{
+			"config": "time-keeper.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
